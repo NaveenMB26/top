@@ -19,7 +19,7 @@ pipeline {
         stage('webhook-stage') {
             steps {
                 echo 'webhook trigger'
-                sh 'du -sh, df -h'
+                sh 'du -sh'
             }
         }
 
