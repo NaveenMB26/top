@@ -3,7 +3,7 @@ pipeline {
 
     stages {
         stage('Checkout') {
-            steps {i
+            steps {
                 git branch: 'master',
                     credentialsId: 'jen',
                     url: 'https://github.com/NaveenMB26/top.git'
