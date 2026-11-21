@@ -5,9 +5,9 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                    credentialsId: 'github-credentials',
-                    url: 'https://github.com/USERNAME/jenkins-demo.git'
+                git branch: 'master',
+                    credentialsId: 'jen'
+		    url: 'https://github.com/NaveenMB26/top.git'
             }
         }
 
