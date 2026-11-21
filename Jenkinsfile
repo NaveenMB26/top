@@ -1,13 +1,12 @@
-
 pipeline {
     agent any
 
     stages {
         stage('Checkout') {
-            steps {
+            steps {i
                 git branch: 'master',
-                    credentialsId: 'jen'
-		    url: 'https://github.com/NaveenMB26/top.git'
+                    credentialsId: 'jen',
+                    url: 'https://github.com/NaveenMB26/top.git'
             }
         }
 
