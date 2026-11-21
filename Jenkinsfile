@@ -16,6 +16,12 @@ pipeline {
                 sh 'ls -l'
             }
         }
+        stage('webhook-stage') {
+            steps {
+                echo 'webhook trigger'
+                sh 'du -sh, df -h'
+            }
+        }
 
         stage('Test') {
             steps {
